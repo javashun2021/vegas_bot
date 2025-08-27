@@ -29,7 +29,7 @@ import ccxt
 API_KEY = os.getenv("BINANCE_API_KEY", "your_key_here")
 API_SECRET = os.getenv("BINANCE_API_SECRET", "your_secret_here")
 
-SYMBOL          = "BTC/USDT"   # e.g., "ETH/USDT"
+SYMBOL          = "ETH/USDT"   # e.g., "ETH/USDT"
 TIMEFRAME       = "1d"
 EMA_FAST        = 144
 EMA_SLOW        = 169
@@ -46,7 +46,7 @@ RISK_PER_TRADE  = 0.01         # risk 1% of quote balance per trade
 ATR_SL_MULT     = 1.0          # SL distance in ATR
 ATR_TP_MULT     = 2.0          # TP distance in ATR
 
-STATE_FILE      = "_state.json" # persist last-candle-time processed to avoid duplicate trading
+STATE_FILE      = "eth_state.json" # persist last-candle-time processed to avoid duplicate trading
 POLL_SECS       = 60            # loop check interval
 # =======================================================
 
